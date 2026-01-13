@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Round');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap');
+
+
+:root {
+            --bg-deep: #050507;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --border: rgba(255, 255, 255, 0.08);
+            --text-primary: #ffffff;
+            --text-secondary: #94a3b8;
+            --accent: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.2);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-deep);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav {
+            padding: 24px 20px;
+            border-bottom: 1px solid var(--border);
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            text-decoration: none;
+        }
+        .nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            transition: 0.2s;
+            display: inline-flex; align-items: center; gap: 6px;
+            text-decoration: none;
+        }
+        .nav a:hover { color: var(--text-primary); 
+            text-decoration: none;}
+
+        .content {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+            flex: 1;
+            width: 100%;
+        }
+
+        /* Header do Ficheiro */
+        .file-header {
+            margin-bottom: 60px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 40px;
+        }
+
+        .status-badge {
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--accent);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .status-badge a {
+            color: var(--accent);
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .status-badge a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 300;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .tech-item {
+            background: var(--glass-bg);
+            padding: 16px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+        .label { font-size: 10px; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 4px; font-family: 'JetBrains Mono', monospace; }
+        .value { font-size: 14px; font-weight: 500; color: var(--text-primary); }
+
+        /* Botão Download */
+        .dl-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 24px;
+            background: var(--text-primary);
+            color: var(--bg-deep);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 60px;
+            transition: 0.3s;
+            box-shadow: 0 0 20px rgba(255,255,255,0.1);
+        }
+        .dl-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 30px rgba(255,255,255,0.2);
+        }
+
+        /* Descrição */
+        .desc-section { margin-top: 40px; }
+        .desc-section h3 { font-size: 18px; margin-bottom: 20px; color: var(--text-primary); }
+        .desc-section p { line-height: 1.8; color: var(--text-secondary); margin-bottom: 20px; font-weight: 300; }
+
+        /* Footer */
+        .footer, .footer a {
+            padding: 20px;
+            text-align: center;
+            font-size: 11px;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border);
+            font-family: 'JetBrains Mono', monospace;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+        .footer a:hover {
+            color: var(--text-primary);
+            text-decoration: underline;
+        }
